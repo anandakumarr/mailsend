@@ -160,4 +160,4 @@ It depends. mailsend supports attachments as inline `-attach "file.txt,text/plai
    * Make sure that the SMTP server relays message to outside domain or only accepts mail from certain IP addresses (Talk to the admin).
    * It is also possible the server requires authentication. Type mailsend -ex for examples on how to use authentication. 
 ==What are the valid MIME types?==
-Please look at mime.types. 
+Please look at [mimetypes MIME Types]
