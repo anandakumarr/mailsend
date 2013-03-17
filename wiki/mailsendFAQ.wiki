@@ -154,7 +154,7 @@ No.
 ==Can a text file be attached as a body of the mail?==
 It depends. mailsend supports attachments as inline `-attach "file.txt,text/plain,i"`. Any decent mail reader ( gmail does, ThunderBird does) will display the text file as a body but it is up to the mail reader to do so, mailsend can not do anything about it.
 
-==I send mail but the mail but it never reaches the destination. What's wrong?==
+==I send mail but the mail never reaches the destination. What's wrong?==
    * First of all make sure you can talk to the SMTP server (FAQ#1).
    * Make sure the mail is accepted by the server (run mailsend with -v).
    * Make sure that the SMTP server relays message to outside domain or only accepts mail from certain IP addresses (Talk to the admin).
