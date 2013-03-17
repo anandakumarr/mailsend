@@ -1,17 +1,18 @@
 #summary ChangeLog of mailasend
 #labels Featured
 #sidebar Toc
-{{{
-1.17b9
-	- There was a bug if multiple attachments are specified. The temp file was
+<wiki:toc />
+=1.17b9=
+  * There was a bug if multiple attachments are specified. The temp file was
 	created only once and was removed. The bug shows up in Windows.
 
-	- The flag -l is changed to -list.
+  * The flag -l is changed to -list.
 
-	- A new flag -log is added for logging status messages to a file. 
+  * A new flag -log is added for logging status messages to a file. 
 	It is very alpha at the moment. Use -v to see anything useful.
 	(Mar-06-2013)
 
+{{{
 1.17b8
 	- Pring more error messages.
 	(Mar-06-2013)
