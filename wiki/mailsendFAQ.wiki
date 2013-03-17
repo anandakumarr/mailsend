@@ -64,7 +64,7 @@ Issuer: /C=US/O=Google Inc/CN=Google Internet Authority
 [S] 221 2.0.0 closing connection xxxxxxxxxxxxxxxx.19
 }}}
 
-=Does mailsend support IPv6?=
+==Does mailsend support IPv6?==
 From v1.17b1, IPv6 is supported in all platforms. If you have IPv6 (native or through tunnel), mailsend will use IPv6 automatically. Or you can specify the IPv6 address of the SMTP server.
 Example:
 
