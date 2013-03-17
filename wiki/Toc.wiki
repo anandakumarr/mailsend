@@ -1,1 +1,2 @@
   * [mailsendFAQ mailsend FAQ]
+  * [ChangeLog ChangeLog]
