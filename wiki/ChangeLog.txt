@@ -5,7 +5,7 @@
 	- The flag -l is changed to -list.
 
 	- A new flag -log is added for logging status messages to a file. 
-    It is very alpha at the moment. Use -v to see anything useful.
+	It is very alpha at the moment. Use -v to see anything useful.
 	(Mar-06-2013)
 
 1.17b8
@@ -16,9 +16,9 @@
 	(Mar-06-2013)
 
 1.17b6
-    - MIME temp file was created on current working directory. Now go through some
-    huristics to determine the path.
-    (Mar-05-2013)
+	- MIME temp file was created on current working directory. Now go through some
+	huristics to determine the path.
+	(Mar-05-2013)
 1.17b5
 	- getaddrinfo() was not found in ws2_32 dll in Windows 2000.
 	included  Wspiapi.h header in msock library as per Microsoft
@@ -32,8 +32,8 @@
 	(Feb-12-2013)
 
 1.17b3
-    - Individual auth flags were not working.
-    (Jan-21-2013)
+	- Individual auth flags were not working.
+	(Jan-21-2013)
 
 1.17b2
 	- IPv6 address was printed wrong.
