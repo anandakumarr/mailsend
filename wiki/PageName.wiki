@@ -1,6 +1,6 @@
 #summary Frequently Asked Questions about mailsend
+#labels Featured
 <wiki:toc />
-
 =mailsend FAQ=
 ==How to find out the capabilities of a SMTP server?==
 ==Does mailsend support IPv6?==
