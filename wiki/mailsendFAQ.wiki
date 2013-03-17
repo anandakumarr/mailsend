@@ -1,5 +1,6 @@
 #summary Frequently Asked Questions about mailsend
 #labels Featured
+#sidebar Toc
 <wiki:toc />
 =mailsend FAQ=
 ==How to find out the capabilities of a SMTP server?==
