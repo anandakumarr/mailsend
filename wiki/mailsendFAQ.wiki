@@ -63,8 +63,43 @@ Issuer: /C=US/O=Google Inc/CN=Google Internet Authority
 [C] QUIT
 [S] 221 2.0.0 closing connection xxxxxxxxxxxxxxxx.19
 }}}
-Q: Does it support IPv6? 
-==Does mailsend support IPv6?==
+
+=Does mailsend support IPv6?=
+From v1.17b1, IPv6 is supported in all platforms. If you have IPv6 (native or through tunnel), mailsend will use IPv6 automatically. Or you can specify the IPv6 address of the SMTP server.
+Example:
+
+{{{
+c:\> mailsend.exe -v -info -smtp smtp.gmail.com
+
+Connecting to SMTP server: smtp.gmail.com at Port: 25
+Connection timeout: 5 secs
+libmsock: using getaddrinfo
+ AF_INET6
+ IPv6 address: [2607:f8b0:400c:c03::6c]:25 <-------
+ EINPROGRESS=10036,EWOULDBLOCK=10035
+ conenct(): socket=312,rc=-1, errno=10035
+ Try socket 312
+[S] 220 mx.google.com ESMTP q19sm8376288vdf.21
+[C] EHLO localhost
+[S] 250-mx.google.com at your service, [2001:xxx:xxxx:xxx::x]
+[S] 250-SIZE 35882577
+[S] 250-8BITMIME
+[S] 250-STARTTLS
+[S] 250 ENHANCEDSTATUSCODES
+[C] STARTTLS
+[S] 220 2.0.0 Ready to start TLS
+Cipher: ECDHE-RSA-RC4-SHA
+Certificate information:
+Subject: /C=US/ST=California/L=Mountain View/O=Google Inc/CN=smtp.gmail.com
+Issuer: /C=US/O=Google Inc/CN=Google Internet Authority
+[C] EHLO localhost
+[S] 250-mx.google.com at your service, [2001:xxx:xxxx:xxx::x]
+[S] 250-SIZE 35882577
+[S] 250-8BITMIME
+[S] 250-AUTH LOGIN PLAIN XOAUTH
+[S] 250 ENHANCEDSTATUSCODES
+[C] QUIT
+}}}
 ==How to send mail via gmail?==
 ==Can this program be used as a mail sender from web browsers?==
 ==Does the program support ESMTP authentication?==
