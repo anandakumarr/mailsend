@@ -1,0 +1,15 @@
+#summary Frequently Asked Questions about mailsend
+<wiki:toc />
+
+=mailsend FAQ=
+==How to find out the capabilities of a SMTP server?==
+==Does mailsend support IPv6?==
+==How to send mail via gmail?==
+==Can this program be used as a mail sender from web browsers?==
+==Does the program support ESMTP authentication?==
+==What's the difference between -ssl and-starttls?==
+==How to send mail to multiple people?==
+==Does mailsend verify certificates while making SSL connections?==
+==Can a text file be attached as a body of the mail?==
+==I send mail but the mail but it never reaches the destination. What's wrong?==
+==What are the valid MIME types?==
