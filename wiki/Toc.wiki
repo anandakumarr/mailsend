@@ -1,2 +1,3 @@
   * [mailsendFAQ mailsend FAQ]
   * [ChangeLog ChangeLog]
+  * [examples Examples]
