@@ -4,6 +4,66 @@
 <wiki:toc />
 =mailsend FAQ=
 ==How to find out the capabilities of a SMTP server?==
+Type any of:
+{{{
+c:\> mailsend.exe -info -smtp localhost
+
+[S] 220 t105 ESMTP Exim 4.76 Sun, 04 Mar 2012 14:13:24 -0500
+[C] EHLO localhost
+[S] 250-t105 Hello localhost [127.0.0.1]
+[S] 250-SIZE 52428800
+[S] 250-PIPELINING
+[S] 250 HELP
+[C] QUIT
+[S] 221 t105 closing connection
+}}}
+{{{
+c:\> mailsend.exe -info -port 587 -smtp smtp.gmail.com
+
+smtp.gmail.com
+SMTP server: smtp.gmail.com, Port: 587
+[S] 220 mx.google.com ESMTP xxxxxxxxxxxxxxxx.8
+[C] EHLO localhost
+[S] 250-mx.google.com at your service, [x.x.x.x]
+[S] 250-SIZE 35882577
+[S] 250-8BITMIME
+[S] 250-STARTTLS
+[S] 250 ENHANCEDSTATUSCODES
+[C] STARTTLS
+[S] 220 2.0.0 Ready to start TLS
+Cipher: ECDHE-RSA-RC4-SHA
+Certificate information:
+Subject: /C=US/ST=California/L=Mountain View/O=Google Inc/CN=smtp.gmail.com
+Issuer: /C=US/O=Google Inc/CN=Google Internet Authority
+[C] EHLO localhost
+[S] 250-mx.google.com at your service, [x.x.x.x]
+[S] 250-SIZE 35882577
+[S] 250-8BITMIME
+[S] 250-AUTH LOGIN PLAIN XOAUTH
+[S] 250 ENHANCEDSTATUSCODES
+[C] QUIT
+[S] 221 2.0.0 closing connection xxxxxxxxxxxxxxxx.8
+}}}
+{{{
+c:\> mailsend.exe -info -port 465 -ssl -smtp smtp.gmail.com
+
+smtp smtp.gmail.com
+SMTP server: smtp.gmail.com, Port: 465
+Cipher: ECDHE-RSA-RC4-SHA
+Certificate information:
+Subject: /C=US/ST=California/L=Mountain View/O=Google Inc/CN=smtp.gmail.com
+Issuer: /C=US/O=Google Inc/CN=Google Internet Authority
+[S] 220 mx.google.com ESMTP xxxxxxxxxxxxxxxx.19
+[C] EHLO localhost
+[S] 250-mx.google.com at your service, [xxx.xxx.xxx.xxx]
+[S] 250-SIZE 35882577
+[S] 250-8BITMIME
+[S] 250-AUTH LOGIN PLAIN XOAUTH
+[S] 250 ENHANCEDSTATUSCODES
+[C] QUIT
+[S] 221 2.0.0 closing connection xxxxxxxxxxxxxxxx.19
+}}}
+Q: Does it support IPv6? 
 ==Does mailsend support IPv6?==
 ==How to send mail via gmail?==
 ==Can this program be used as a mail sender from web browsers?==
