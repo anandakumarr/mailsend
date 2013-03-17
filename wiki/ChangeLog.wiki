@@ -1,3 +1,6 @@
+#summary ChangeLog of mailasend
+#labels Featured
+#sidebar Toc
 {{{
 1.17b9
 	- There was a bug if multiple attachments are specified. The temp file was
