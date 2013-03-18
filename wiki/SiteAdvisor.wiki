@@ -1,7 +1,7 @@
 #summary McAfee SiteAdvisor's slander!
 #sidebar Toc
 <wiki:toc/>
-=Old Old blurb about McAfee SiteAdvisor=
+=Old blurb about !McAfee SiteAdvisor=
 I am keeping this document for historical reasons.
 
 Some people reported that some version of McAfee virus scanner detects one of my software mailsend as Gaobot virus. The root of the probelm is McAfee SiteAdvisor. It falsely claiming that mailsend is a virus! They are basically ruining the reputation of my site, which solely exists (more than 12 years) to serve the Internet community with free software I wrote. As yahoo uses McAfee SiteAdvisor software, my site shows up as all red flagged in search. It's a shame yahoo has become so clueless! Apparently it is nothing new, McAfee SiteAdvisor is notorious for flagging sites falsely. Google on it, you will see what I mean.
