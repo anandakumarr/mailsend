@@ -2,3 +2,4 @@
   * [ChangeLog ChangeLog]
   * [examples Examples]
   * [mimetypes MIME Types]
+  * [SiteAdvisor Old blurb about McAfee SiteAdvisor]
