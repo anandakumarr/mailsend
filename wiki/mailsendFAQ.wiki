@@ -3,6 +3,10 @@
 #sidebar Toc
 <wiki:toc />
 =mailsend FAQ=
+==Can an attachment be part of the mail body?==
+Yes. mailsend supports attachments as inline `-attach "file.txt,text/plain,i"`. Any decent mail reader ( gmail does, ThunderBird does) will display the text file as a body but it is up to the mail reader to do so. mailsend can not do anything about it.
+
+Microsoft Outlook does not support it by design. Please look at the Microsoft Knowledge base article [http://support.microsoft.com/kb/814111] for detail.
 ==How to find out the capabilities of a SMTP server?==
 Type any of:
 {{{
@@ -151,8 +155,7 @@ Make sure there is a new line at the end of the last line or the last address wi
 ==Does mailsend verify certificates while making SSL connections?==
 No.
 
-==Can a text file be attached as a body of the mail?==
-It depends. mailsend supports attachments as inline `-attach "file.txt,text/plain,i"`. Any decent mail reader ( gmail does, ThunderBird does) will display the text file as a body but it is up to the mail reader to do so, mailsend can not do anything about it.
+
 
 ==I send mail but the mail never reaches the destination. What's wrong?==
    * First of all make sure you can talk to the SMTP server (FAQ#1).
