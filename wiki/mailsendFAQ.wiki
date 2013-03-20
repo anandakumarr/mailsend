@@ -8,7 +8,7 @@ It is probably the mostly asked question. mailsend supports attachments as inlin
 
 Microsoft Outlook does not support inline content-disposition MIME header by design. Please look at the Microsoft Knowledge base article [http://support.microsoft.com/kb/814111] for detail.
 
-My observation about Outlook 2010 is, if the very first attachment is attached as inline, it shows up as embedded in the body. The rest of the attachments will show up as regular just attachments, no matter what kind of content-disposition is used. I have no idea what kind of logic they are using!
+My observation about Outlook 2010 is, if the very first attachment is attached as inline, it shows up as embedded in the body. The rest of the attachments show up as regular attachments, no matter what kind of content-disposition is used. I have no idea what kind of logic they are using!
 
 ==How to find out the capabilities of a SMTP server?==
 Type any of:
