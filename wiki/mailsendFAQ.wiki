@@ -108,10 +108,12 @@ Issuer: /C=US/O=Google Inc/CN=Google Internet Authority
 [C] QUIT
 }}}
 ==How to send mail via gmail?==
-
-Ans: Please look at the [examples Examples] section. Look for -ssl and -starttls and -port.
+Please look at the [examples Examples] section. Look for -ssl and -starttls and -port.
 ==Can this program be used as a mail sender from web browsers?==
-Yes. I'll use the Firefox as an example as I use it. By default on windows Firefox will start outlook express (or nothing) to send mail when you click on a mailto: link. This behavior can be changed as follows:
+
+I'll use the Firefox as an example in Windows. By default in MS Windows, Firefox will start outlook express (or nothing) to send mail when you click on a mailto: link. This behavior can be changed as follows:
+
+*Warning:* the following instructions might be different for different version of Windows.
 
 Go to Control Panel
 Click on Folder Options
