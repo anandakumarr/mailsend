@@ -162,7 +162,7 @@ No.
 
 
 
-==I send mail but the mail never reaches the destination. What's wrong?==
+==I send mail but the mail never reaches the destination. What`'s wrong?==
    
    * First of all make sure you can talk to the SMTP server (FAQ 2)
    * Make sure the mail is accepted by the server (run mailsend with -v).
