@@ -163,7 +163,7 @@ No.
 
 
 ==I send mail but the mail never reaches the destination. What's wrong?==
-   * First of all make sure you can talk to the SMTP server ([mailsendFAQ#How_to_find_out_the_capabilities_of_a_SMTP_server?]).
+   * First of all make sure you can talk to the SMTP server (FAQ 2)
    * Make sure the mail is accepted by the server (run mailsend with -v).
    * Make sure that the SMTP server relays message to outside domain or only accepts mail from certain IP addresses (Talk to the admin).
    * It is also possible the server requires authentication. Type mailsend -ex for examples on how to use authentication. 
