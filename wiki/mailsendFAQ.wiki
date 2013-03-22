@@ -4,7 +4,7 @@
 <wiki:toc />
 =mailsend FAQ=
 ==Can an attachment be part of the mail body?==
-It is probably the mostly asked question. The answer is yes. mailsend supports attachments as inline with the option `-attach "file,MIME type,i"`. Any decent mail reader (gmail does, !ThunderBird does) will display the attachment as a body of the mail but it is up to the mail reader to do so. mailsend can not do anything about it.
+Yes. mailsend supports attachments as inline with the option `-attach "file,MIME type,i"`. Any decent mail reader (gmail does, !ThunderBird does) will display the attachment as a body of the mail but it is up to the mail reader to do so. mailsend can not do anything about it.
 
 Microsoft Outlook does not support inline content-disposition MIME header by design. Please look at the Microsoft Knowledge base article [http://support.microsoft.com/kb/814111] for detail.
 
