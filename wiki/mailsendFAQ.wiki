@@ -135,7 +135,7 @@ On Unix, search on the web on how to setup external mail sender for Firefox. Aga
 ==Does the program support ESMTP authentication?==
 From v1.15a+, STARTTLS, CRAM-MD5, LOGIN and PLAIN authentication is supported. SMTP over SSL is also supported in v 1.16+. Type mailsend -ex for examples on how to use authentication.
 ==What's the difference between -ssl and -starttls?==
-With option -ssl, an encrypted connection is made first and then SMTP protocol continues over the encrypted connection. For example, smtp.gmail.com supports it at port 465. With -starttls, a regular unencrypted connection is made first, then if the server supports STRTTLS, the command is issued to make the connection encrypted. For example smtp. gmail.com supports STARTTLS at port 587.
+With the option -ssl, an encrypted connection is made first and then SMTP protocol continues over the encrypted connection. For example, smtp.gmail.com supports it at port 465. With -starttls, a regular unencrypted connection is made first, then if the server supports STRTTLS, the command is issued to make the connection encrypted. For example smtp. gmail.com supports STARTTLS at port 587.
 ==How to send mail to multiple people?==
 Create a text file containing the addresses and then specify the file with -l. The syntax of the file is as follows:
 {{{
