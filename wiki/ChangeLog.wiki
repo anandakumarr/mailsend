@@ -5,7 +5,7 @@
 =1.17b10=
   * If there are some kind of socket error, print the error message. If a log file is specified with -log, the error will be written there.
 _(Mar-23-2013)_
-  * modified Makefile.in to support make -j. Fixes Issue# 4
+  * modified Makefile.in to support make -j. Fixes Issue 4
   * fixed several warnings
 _(Apr-27-2013)_
 =1.17b9=
