@@ -1,0 +1,36 @@
+My Personal notes
+=================
+How to release
+--------------
+* pixel
+  - compile windows binary
+  - test by running test_gmail.sh
+
+* t105
+  - compile. run make docs
+  - test by running test_gmail.sh
+  - do a check-in 
+  - run mk_release_svn_google.rb to branch and tag the release and create the tgz file.
+
+  - create debian package by running mk_debian_package.rb
+
+  - use googlecode_upload.pl to upload the tgz file
+  - use googlecode_upload.pl to upload the deb file
+
+
+  - cp mailsend.exe mailsendV.exe
+  - zip mailsendV.zip mailsendV.exe
+  - use googlecode_upload.pl to upload the zip file
+  - ./changelog2wiki.rb > ../mailsend-wiki/ChangeLog.wiki; check-in
+  - update version numbers in main page
+  - update issue. Well if svn comment has Fixes Issue 6, it will be closed
+automatically. Very clever!
+
+  - deprecate old versions in google code
+
+  - run cp_to_bins.rb
+  - cd ../mailsend_bins
+  - add the latest directory to local svn
+
+--
+Apr-28-2013 
