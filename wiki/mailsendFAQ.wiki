@@ -109,6 +109,72 @@ Issuer: /C=US/O=Google Inc/CN=Google Internet Authority
 }}}
 ==How to send mail via gmail?==
 Please look at the [examples Examples] section. Look for -ssl and -starttls and -port.
+==Does mailsend support multibyte non-ascii input?==
+At this time it only works in linux and mac. In windows it will be needed to change code to support reading multibyte characters input from command line. Here is an example of non-ascii input in mac, mailsend 1.17b14 is running in linux:
+
+[http://mailsend.googlecode.com/svn/wiki/multibyte_input.png]
+
+The verbose output looks something like:
+{{{
+To: muquit@gmail.com
+X-Mailer: @(#) mailsend v1.17b14 (Unix)
+X-Copyright: BSD. It is illegal to use this software for Spamming
+Content-type: multipart/mixed; boundary="Yodwo7b73NxuwpWN"
+Mime-version: 1.0
+
+--Yodwo7b73NxuwpWN
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+
+[C] One line test with ut-8 from mac
+[C] Nicht möglich!
+[C] Das macht Spaß!
+[C] 中文測試
+[C] গগনে গরজে মেঘ, ঘন বরষা
+
+--Yodwo7b73NxuwpWN--
+
+[C] .
+[S] 250 2.0.0 OK 1382292305 h9sm29267308qaq.9 - gsmtp
+[C] QUIT
+[S] 221 2.0.0 closing connection h9sm29267308qaq.9 - gsmtp
+Mail sent successfully
+}}}
+
+The mail in gmail looks like:
+[http://mailsend.googlecode.com/svn/wiki/multibyte_gmail.png]
+
+Notice gmail smtp server accept multibyte characters. However some SMTP servers only accepts US-ASCII as data. In that case use the option -enc base64. The verbose output will look like:
+
+{{{
+To: muquit@gmail.com
+X-Mailer: @(#) mailsend v1.17b14 (Unix)
+X-Copyright: BSD. It is illegal to use this software for Spamming
+Content-type: multipart/mixed; boundary="Mp21EGGpczpzGyP5"
+Mime-version: 1.0
+
+--Mp21EGGpczpzGyP5
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+Content-Transfer-Encoding: base64
+
+Oneline temp file1: /tmp/mailsend8kmATg
+Oneline temp file2: /tmp/mailsendL2n1uF
+[C] T25lIGxpbmUgdGVzdCB3aXRoIHV0LTggZnJvbSBtYWMNCk5pY2h0IG3DtmdsaWNoIQ0KRGFz
+[C] IG1hY2h0IFNwYcOfIQ0K5Lit5paH5ris6KmmDQrgppfgppfgpqjgp4cg4KaX4Kaw4Kac4KeH
+[C] IOCmruCnh+CmmCwg4KaY4KaoIOCmrOCmsOCmt+Cmvg0K
+
+--Mp21EGGpczpzGyP5--
+
+[C] .
+[S] 250 2.0.0 OK 1382292697 kz8sm24200358qeb.0 - gsmtp
+[C] QUIT
+[S] 221 2.0.0 closing connection kz8sm24200358qeb.0 - gsmtp
+Mail sent successfully
+}}}
+
+The mail will look the same in gmail.
+
 ==Can this program be used as a mail sender from web browsers?==
 
 I'll use the Firefox as an example in Windows. By default in MS Windows, Firefox will start outlook express (or nothing) to send mail when you click on a mailto: link. This behavior can be changed as follows:
