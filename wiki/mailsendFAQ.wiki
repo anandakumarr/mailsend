@@ -123,7 +123,6 @@ X-Copyright: BSD. It is illegal to use this software for Spamming
 Content-type: multipart/mixed; boundary="aWGL4q7mlq0dFml7"
 Mime-version: 1.0
 
-
 --aWGL4q7mlq0dFml7
 Content-Type: text/plain; charset=utf-8
 Content-Disposition: inline
@@ -155,7 +154,6 @@ X-Mailer: @(#) mailsend v1.17b15 (Unix)
 X-Copyright: BSD. It is illegal to use this software for Spamming
 Content-type: multipart/mixed; boundary="NflDZxwWowVAFTP3"
 Mime-version: 1.0
-
 
 --NflDZxwWowVAFTP3
 Content-Type: text/plain; charset=utf-8
