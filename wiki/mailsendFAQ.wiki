@@ -149,29 +149,31 @@ The mail in gmail looks like:
 Notice smtp.gmail.com accepts raw multibyte characters. However some SMTP servers only accepts US-ASCII as data. So it is a good idea to use the option -enc base64. The verbose output will look like:
 
 {{{
+Date: Sun, 20 Oct 2013 20:48:05 -0400
 To: muquit@gmail.com
-X-Mailer: @(#) mailsend v1.17b14 (Unix)
+X-Mailer: @(#) mailsend v1.17b15 (Unix)
 X-Copyright: BSD. It is illegal to use this software for Spamming
-Content-type: multipart/mixed; boundary="Mp21EGGpczpzGyP5"
+Content-type: multipart/mixed; boundary="NflDZxwWowVAFTP3"
 Mime-version: 1.0
 
---Mp21EGGpczpzGyP5
+
+--NflDZxwWowVAFTP3
 Content-Type: text/plain; charset=utf-8
 Content-Disposition: inline
 Content-Transfer-Encoding: base64
 
-Oneline temp file1: /tmp/mailsend8kmATg
-Oneline temp file2: /tmp/mailsendL2n1uF
-[C] T25lIGxpbmUgdGVzdCB3aXRoIHV0LTggZnJvbSBtYWMNCk5pY2h0IG3DtmdsaWNoIQ0KRGFz
-[C] IG1hY2h0IFNwYcOfIQ0K5Lit5paH5ris6KmmDQrgppfgppfgpqjgp4cg4KaX4Kaw4Kac4KeH
-[C] IOCmruCnh+CmmCwg4KaY4KaoIOCmrOCmsOCmt+Cmvg0K
+Oneline temp file1: * /tmp/mailsend05qsry
+Oneline temp file2: * /tmp/mailsendtGT9GB
+[C] cnVubmluZyBvbiBsaW51eCwgaW5wdXQgZnJvbSBtYWMga2V5Ym9hcmQKTmljaHQgbcO2Z2xp
+[C] Y2ghCkRhcyBtYWNodCBTcGHDnyEK5Lit5paH5ris6KmmCuCml+Cml+CmqOCnhyDgppfgprDg
+[C] ppzgp4cg4Kau4KeH4KaYLCDgppjgpqgg4Kas4Kaw4Ka34Ka+Cg==
 
---Mp21EGGpczpzGyP5--
+--NflDZxwWowVAFTP3--
 
 [C] .
-[S] 250 2.0.0 OK 1382292697 kz8sm24200358qeb.0 - gsmtp
+[S] 250 2.0.0 OK 1382316483 u3sm27124567qej.8 - gsmtp
 [C] QUIT
-[S] 221 2.0.0 closing connection kz8sm24200358qeb.0 - gsmtp
+[S] 221 2.0.0 closing connection u3sm27124567qej.8 - gsmtp
 Mail sent successfully
 }}}
 
