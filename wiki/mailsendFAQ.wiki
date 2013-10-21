@@ -116,28 +116,30 @@ At this time it only works in linux and mac. In windows it will be needed to cha
 
 The verbose output looks something like:
 {{{
+Date: Sun, 20 Oct 2013 20:42:44 -0400
 To: muquit@gmail.com
-X-Mailer: @(#) mailsend v1.17b14 (Unix)
+X-Mailer: @(#) mailsend v1.17b15 (Unix)
 X-Copyright: BSD. It is illegal to use this software for Spamming
-Content-type: multipart/mixed; boundary="Yodwo7b73NxuwpWN"
+Content-type: multipart/mixed; boundary="aWGL4q7mlq0dFml7"
 Mime-version: 1.0
 
---Yodwo7b73NxuwpWN
+
+--aWGL4q7mlq0dFml7
 Content-Type: text/plain; charset=utf-8
 Content-Disposition: inline
 
-[C] One line test with ut-8 from mac
+[C] running on linux, input from mac keyboard
 [C] Nicht möglich!
 [C] Das macht Spaß!
 [C] 中文測試
 [C] গগনে গরজে মেঘ, ঘন বরষা
 
---Yodwo7b73NxuwpWN--
+--aWGL4q7mlq0dFml7--
 
 [C] .
-[S] 250 2.0.0 OK 1382292305 h9sm29267308qaq.9 - gsmtp
+[S] 250 2.0.0 OK 1382316162 b10sm27076637qeg.7 - gsmtp
 [C] QUIT
-[S] 221 2.0.0 closing connection h9sm29267308qaq.9 - gsmtp
+[S] 221 2.0.0 closing connection b10sm27076637qeg.7 - gsmtp
 Mail sent successfully
 }}}
 
