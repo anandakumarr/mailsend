@@ -143,6 +143,7 @@ Mail sent successfully
 }}}
 
 The mail in gmail looks like:
+
 [http://mailsend.googlecode.com/svn/wiki/multibyte_gmail.png]
 
 Notice smtp.gmail.com accepts raw multibyte characters. However some SMTP servers only accepts US-ASCII as data. So it is a good idea to use the option -enc base64. The verbose output will look like:
