@@ -1,1 +1,3 @@
-The mailsend issue tracking [https://github.com/muquit/mailsend/issues is moved to GitHub]. The project is in the process of moving there as well.
+The mailsend issue tracking [https://github.com/muquit/mailsend/issues is moved to GitHub]. 
+
+The project is in the process of moving there as well.
