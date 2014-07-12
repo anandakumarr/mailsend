@@ -1,8 +1,2 @@
-The mailsend source [https://github.com/muquit/mailsend/ is moved to GitHub]. 
 
-The project is in the process of moving there as well.
-
-Thanks!
-
---
-updated: Jan-16-2014 
+== Moved to !GitHub [https://github.com/muquit/mailsend/] ==
