@@ -1,2 +1,2 @@
 
-= Moved to !GitHub [https://github.com/muquit/mailsend/issues] =
+== Moved to !GitHub [https://github.com/muquit/mailsend/issues] ==
